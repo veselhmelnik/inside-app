@@ -1,81 +1,83 @@
-header {
-    .user-wrapper {
-        float: right;
-        margin-top: 20px;
-        margin-right: 35px;
-        .profile-header {
-            .open-profile {
-                font-size: 15px;
-                position: relative;
-                top: -12px;
-                right: -8px;
-            }
-        }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  .user-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .profile-info {
+      margin-right: 10px;
+      .notifications {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 8px;
         .profile-btn {
-            font-size: 25px;
-            padding-right: 16px;
-            position: relative;
-            top: -10px;
+          font-size: 22px;
+        }
+      }
+    }
+    .user {
+      .open-profile {
+        font-size: 15px;
+        position: relative;
+        top: -12px;
+        right: -8px;
+      }
+    }
+  }
 
-        }
+  .main-info {
+    background-color: white;
+    padding-left: 1rem;
+
+    &__name {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: left;
+      margin: 0 0 7px 0;
     }
-    height: 10%;
-    width: 100% - 8% - 35%;
-    .main-info {
-        position: absolute;
-        left: 7%;
-        background-color: white;
-        
-        padding-left: 0;
-        width: 20%;
-        margin-top: 10px;
-        margin-left: 0px;
-       
-        &__name {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-align: left;
-        }
-        &__date {
-            display: block;
-            color: gray;
-            font-size: 13px;
-            text-align: left;
-        }
+    &__date {
+      display: block;
+      color: gray;
+      font-size: 13px;
+      text-align: left;
     }
+  }
 }
 
 $speed: 0.5s;
 
-.btn-flip{
-    padding-right: 2px;
+.btn-flip {
+  padding-right: 2px;
   opacity: 1;
   outline: 0;
   color: #fff;
-  line-height: 35px;
+  line-height: 30px;
   position: relative;
   text-align: center;
   letter-spacing: 1px;
   display: inline-block;
   text-decoration: none;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   text-transform: uppercase;
-  
-  &:hover{
-    
-    &:after{
+
+  &:hover {
+    &:after {
       opacity: 1;
       transform: translateY(0) rotateX(0);
     }
-    
-    &:before{
+
+    &:before {
       opacity: 0;
       transform: translateY(50%) rotateX(90deg);
     }
   }
-  
-  &:after{
+
+  &:after {
     top: 0;
     left: 0;
     opacity: 0;
@@ -88,15 +90,15 @@ $speed: 0.5s;
     content: attr(data-back);
     transform: translateY(-50%) rotateX(90deg);
   }
-  
-  &:before{
+
+  &:before {
     top: 0;
     left: 0;
     opacity: 1;
     color: #141415;
     display: block;
-    padding: 0 30px;
-    line-height: 35px;
+    padding: 0 16px;
+    line-height: 30px;
     transition: $speed;
     position: relative;
     background: #44d781;

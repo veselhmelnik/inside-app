@@ -4,24 +4,26 @@ import avatar from './avatar.png';
 
 import './header.scss';
 
-const Header = () => {
+export const Header = () => {
     return (
-        <header>
+        <header className="header">
             <div className="main-info">
-                <p className="main-info__name">Hello, Nikita DM</p>
+                <h2 className="main-info__name">Hello, Nikita DM</h2>
                 <span className="main-info__date">Today is {INFO_DATE}</span>
             </div>
             <div className="user-wrapper">
-                <div className="profile-header">
-                    <span className="las la-bell profile-btn"></span>
-                    <span className="las la-sms profile-btn"></span>
+                <div className="profile-info">
+                    <div className="notifications">
+                        <span className="las la-bell profile-btn"></span>
+                        <span className="las la-sms profile-btn"></span>
+                    </div>
+                    <a href="#" className="btn-flip" data-back="Ofline" data-front="Online"></a> 
+                </div>
+                <div className="user">
                     <img src={avatar} width="40px" height="40px" alt="avatar"/>
                     <span className="las la-angle-down open-profile"></span>
                 </div>
-                    <a href="#" className="btn-flip" data-back="Ofline" data-front="Online"></a> 
             </div>
         </header>
     )
 }
-
-export default Header;
