@@ -1,0 +1,32 @@
+header {
+    .user-wrapper {
+        display: contents;
+        margin-left: 70%;
+        position: relative;
+    }
+    height: 10%;
+    width: 100% - 8% - 35%;
+    .main-info {
+        position: absolute;
+        left: 7%;
+        background-color: white;
+        
+        padding-left: 0;
+        width: 15%;
+        margin-top: 10px;
+        margin-left: 0px;
+       
+        &__name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        &__date {
+            display: block;
+            color: gray;
+            font-size: 13px;
+            text-align: left;
+        }
+    }
+}

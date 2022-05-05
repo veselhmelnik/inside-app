@@ -1,0 +1,1 @@
+export const INFO_DATE = new Date().toLocaleDateString('en-us', ({ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}));
