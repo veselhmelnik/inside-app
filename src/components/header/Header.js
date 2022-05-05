@@ -12,20 +12,13 @@ const Header = () => {
                 <span className="main-info__date">Today is {INFO_DATE}</span>
             </div>
             <div className="user-wrapper">
-                <div className="online-btns">
-                    <button>
-                        Online!
-                    </button>
-                    <button>
-                        AFK!
-                    </button>
+                <div className="profile-header">
+                    <span className="las la-bell profile-btn"></span>
+                    <span className="las la-sms profile-btn"></span>
+                    <img src={avatar} width="40px" height="40px" alt="avatar"/>
+                    <span className="las la-angle-down open-profile"></span>
                 </div>
-            
-                <span className="las la-bell"></span>
-                <span className="las la-sms"></span>
-                <img src={avatar} width="40px" height="40px" alt="avatar"/>
-                <span className="las la-angle-down"></span>
-                
+                    <a href="#" className="btn-flip" data-back="Ofline" data-front="Online"></a> 
             </div>
         </header>
     )

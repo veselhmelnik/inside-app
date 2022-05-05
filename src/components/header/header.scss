@@ -1,8 +1,23 @@
 header {
     .user-wrapper {
-        display: contents;
-        margin-left: 70%;
-        position: relative;
+        float: right;
+        margin-top: 20px;
+        margin-right: 35px;
+        .profile-header {
+            .open-profile {
+                font-size: 15px;
+                position: relative;
+                top: -12px;
+                right: -8px;
+            }
+        }
+        .profile-btn {
+            font-size: 25px;
+            padding-right: 16px;
+            position: relative;
+            top: -10px;
+
+        }
     }
     height: 10%;
     width: 100% - 8% - 35%;
@@ -12,7 +27,7 @@ header {
         background-color: white;
         
         padding-left: 0;
-        width: 15%;
+        width: 20%;
         margin-top: 10px;
         margin-left: 0px;
        
@@ -29,4 +44,63 @@ header {
             text-align: left;
         }
     }
+}
+
+$speed: 0.5s;
+
+.btn-flip{
+    padding-right: 2px;
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 35px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  
+  &:hover{
+    
+    &:after{
+      opacity: 1;
+      transform: translateY(0) rotateX(0);
+    }
+    
+    &:before{
+      opacity: 0;
+      transform: translateY(50%) rotateX(90deg);
+    }
+  }
+  
+  &:after{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #1e201f;
+    display: block;
+    transition: $speed;
+    position: absolute;
+    background: #e94848;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+  }
+  
+  &:before{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #141415;
+    display: block;
+    padding: 0 30px;
+    line-height: 35px;
+    transition: $speed;
+    position: relative;
+    background: #44d781;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+  }
 }
