@@ -1,14 +1,16 @@
 .search {
-    margin-top: 36px;
-    margin-left: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 9px;
+
     &__input {
-        width: 10rem;
-        padding: 8px 24px;
+        width: 8rem;
+        padding: 8px 20px;
   
         background-color: transparent;
         transition: transform 300ms ease-in-out;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 12px;
+        line-height: 12px;
         
         color: #000000;
         background-color: transparent;
@@ -31,7 +33,7 @@
         
         &:hover,
         &:focus {
-            padding: 12px 0;
+            padding: 9px 0;
             outline: 0;
             border: 1px solid transparent;
             border-bottom: 1px solid #575756;

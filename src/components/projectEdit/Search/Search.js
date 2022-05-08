@@ -1,6 +1,6 @@
 import './search.scss'
 
-const Search = () => {
+export const Search = () => {
     // function Search() {
     //     const input = document.querySelector('.search__input');
     //     const filter = input.value.toUpperCase();
@@ -28,4 +28,3 @@ const Search = () => {
         </div>
     )
 }
-export default Search;

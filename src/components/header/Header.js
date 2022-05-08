@@ -17,7 +17,7 @@ export const Header = () => {
                         <span className="las la-bell profile-btn"></span>
                         <span className="las la-sms profile-btn"></span>
                     </div>
-                    <a href="#" className="btn-flip" data-back="Ofline" data-front="Online"></a> 
+                    <a href="#" className="btn-flip" data-back="Offline" data-front="Online"></a> 
                 </div>
                 <div className="user">
                     <img src={avatar} width="40px" height="40px" alt="avatar"/>

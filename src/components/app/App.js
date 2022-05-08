@@ -1,7 +1,7 @@
-import Sidebar from '../sidebar/Sidebar';
+import { Sidebar } from '../sidebar/Sidebar';
 import { Header } from '../header/Header'
-import Rightside from '../rightside/Rightside';
-import Main from '../main/Main';
+import { Rightside } from '../rightside/Rightside'
+import { ProjectEdit } from '../projectEdit/ProjectEdit';
 
 import './app.scss';
 
@@ -10,7 +10,7 @@ const App = () => (
     <Sidebar/>
     <div className="contentWrapper">
       <Header />
-      <Main />
+      <ProjectEdit/>
     </div>
       <Rightside/>
   </div>

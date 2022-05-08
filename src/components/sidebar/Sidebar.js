@@ -2,7 +2,7 @@ import logoWhite from './logo-white.png';
 
 import './sidebar.scss';
 
-const Sidebar = () => {
+export const Sidebar = () => {
     return (
         <div className="sidebar"> 
             <div className="sidebar__logo">
@@ -24,5 +24,3 @@ const Sidebar = () => {
         </div>
     );
 }
-
-export default Sidebar;

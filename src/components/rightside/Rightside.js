@@ -1,13 +1,9 @@
 import './rightside.scss';
 
-const Rightside = () => {
+export const Rightside = () => {
     return (
-        <>
             <div className="right-side">
                 
             </div>
-        </>
     )
 }
-
-export default Rightside;
