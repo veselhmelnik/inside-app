@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './modules/App'
+import App from 'modules/App'
 import 'antd/dist/antd.css'
 import './styles/index.css'
 
